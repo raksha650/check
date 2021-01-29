@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<title>User Registration</title>
+
+<!-- <link rel="shortcut icon" href="images/favicon.png">
+<link rel="stylesheet" href="css/bootstrap.css">
+<link rel="stylesheet" href="css/font-awesome.css">
+<link rel="stylesheet" href="css/mdb.css"> -->
+
+<script type="text/javascript">
+	function getStateList(countryId) {
+		
+		$('#state').find('option').remove();
+		
+		$.ajax({
+			type : "POST",
+			url : "get_state_list",
+			data : {
+				"countryId" : countryId
+			}
+
+		}).done(
+				function(stateList) {
+
+					var opt = '';
+					opt += '<option value=""> Select State </option>';
+					for (i in stateList) {
+						opt += '<option value="'+stateList[i].id+'">'
+								+ stateList[i].name + '</option>';
+					}
+					$('#state').html(opt);
+				});
+	}
+	function getCitiesList(stateId) {
+
+		$('#city').find('option').remove().end().append(
+				'<option value="">Select City</option>').val('');
+		$.ajax({
+			type : "POST",
+			url : "get_city_list",
+			data : {
+				"stateId" : stateId
+			}
+
+		}).done(
+				function(cityList) {
+
+					var opt = '';
+					for (i in cityList) {
+						opt += '<option value="'+cityList[i].id+'">'
+								+ cityList[i].name + '</option>';
+					}
+
+					$('#city').append(opt);
+				});
+
+	}
+	
+	
+</script>
+
+
+</head>
+
+<body class="fixed-sn white-skin" >
+<%@include file="header.jsp"%>
+<%@include file="sidenev.jsp"%>
+    <main>
+    	<div class="container-fluid">
+        	<section class="section card mb-5">
+            	<div class="card-body">
+                	<h1 class="section-heading h1">User Registration</h1>
+                    <!-- <h5 class="pb-5">Input fields</h5> -->
+                    <form:form action="save_update_user"
+								modelAttribute="registration" method="post"
+								onsubmit="return confirm('Do you really want to save record ?');">
+								
+								<form:hidden path="userId"/>
+								
+								<c:if test="${not empty Message}">
+									<div class="alert alert-success fade in">
+										<a href="#" class="close" data-dismiss="alert">&times;</a><strong>
+										${Message};</strong>
+									</div>
+								</c:if>
+                    <div class="row">
+                    	<div class="col-md-4 mb-4">
+                            <div class="md-form">
+                                <form:input type="text" class="form-control" path="firstName"
+											placeholder="First Name" onkeypress="return onlyAlphabets(event,this);"/>
+                                <label for="form1" class="">First Name</label>
+                            </div>
+                        </div>
+                        
+                        <div class="col-md-4 mb-4">
+                            <div class="md-form">
+                                <form:input type="text" class="form-control" path="middleName"
+											placeholder="Middle Name" onkeypress="return onlyAlphabets(event,this);"/>
+                                <label for="form1" class="">Middle Name</label>
+                            </div>
+                        </div>
+                        
+                        <div class="col-md-4 mb-4">
+                            <div class="md-form">
+                                <form:input type="text" class="form-control" path="lastName"
+											placeholder="Last Name" onkeypress="return onlyAlphabets(event,this);"/>
+                                <label for="form1" class="">Last Name</label>
+                            </div>
+                        </div>                        
+                    </div>
+                    
+                    <div class="row">
+                    	<div class="col-md-4 mb-4">
+                            <div class="md-form">
+                               <form:input type="text" class="form-control" path="email"
+											placeholder="Email Address" onblur="validateEmail(this.value)"/>
+                                <label for="form1" class="">Email</label>
+                            </div>
+                        </div>
+                        
+                        <div class="col-md-4 mb-4">
+                            <div class="md-form">
+                                <form:input type="password" class="form-control"
+											path="password" placeholder="Password" onblur="checkPassword(this.value)"/>
+                                <label for="form1" class="">Password</label>
+                            </div>
+                        </div>
+                        
+                        <div class="col-md-4 mb-4">
+                            <div class="md-form">
+                                <form:input type="text" id="contact" class="form-control" path="phone"
+											placeholder="Mobile No" onkeypress="return onlyNumber(event);" onblur="return mobileValidate(this.value);"/>
+                                <label for="form1" class="">Last Name</label>
+                            </div>
+                        </div>                        
+                    </div>
+                    
+                    
+                    <div class="row mb-5">                        
+                        <div class="col-lg-4 col-md-6 mb-4">
+                            <form:select class="mdb-select" required="true"
+							   path="deptId.id">
+							  <form:option value="">Select Department</form:option>
+							  <c:forEach items="${deptList}" var="dl">
+								<form:option value="${dl.id}">${dl.deptName}</form:option>
+							  </c:forEach>
+				           </form:select>
+                        </div>
+                    </div>
+                    
+                    
+                    <div class="row mb-5">                        
+                        <div class="col-lg-4 col-md-6 mb-4">
+                            <form:select class="form-control" required="true" id="office" path="countryId.id"
+								onchange="getStateList(this.value);">
+								<form:option value="">Select Country</form:option>
+								<c:forEach items="${countryList}" var="cl">
+									<form:option value="${cl.id}">${cl.name}</form:option>
+								</c:forEach>
+							</form:select>
+                        </div>
+                        
+                        <div class="col-lg-4 col-md-6 mb-4">
+                            <form:select class="form-control" required="true"
+								path="stateId.id" id="state"
+								onchange="getCitiesList(this.value);">
+								<form:option value="">Select State</form:option>
+								<c:forEach items="${stateList}" var="sl">
+									<form:option value="${sl.id}">${sl.name}</form:option>
+								</c:forEach>
+							</form:select>
+                        </div>
+                        
+                        <div class="col-lg-4 col-md-6 mb-4">
+                            <form:select class="form-control" required="true"
+								path="cityId.id" name="city" id="city">
+								<form:option value="">Select City</form:option>
+								<c:forEach items="${cityList}" var="ctl">
+									<form:option value="${ctl.id}">${ctl.name}</form:option>
+								</c:forEach>
+							</form:select>
+                        </div>
+                        
+                    </div>
+                    
+                    
+                    <div class="form-group">
+						<!-- Button -->
+						<div class="col-md-offset-3 col-md-9">
+							<button id="btn-signup" type="submit" class="btn btn-info">
+								<i class="icon-hand-right"></i> &nbsp Sign Up
+							</button>
+
+						</div>
+					</div>                   
+                 </form:form> 
+                </div>
+            </section>
+        </div>
+    </main>
+<%@include file="footer.jsp"%>
+    
+</body>
+</html>

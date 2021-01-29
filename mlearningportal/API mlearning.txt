@@ -1,0 +1,2306 @@
+﻿1) API for country fetch by country id
+
+URL   :http://cinfysystems.com:8080/mlearningportal/country/search?id=1
+
+output:
+
+{
+    "status": 1,
+    "data": [
+        {
+            "id": 1,
+            "sortname": "AF",
+            "name": "Afghanistan",
+            "phonecode": 93
+        }
+    ],
+    "error": null
+}
+
+2) API for country fetch by country sort name
+
+URL   :http://cinfysystems.com:8080/mlearningportal/country/search?sortname=AF
+
+output:
+
+{
+    "status": 1,
+    "data": [
+        {
+            "id": 1,
+            "sortname": "AF",
+            "name": "Afghanistan",
+            "phonecode": 93
+        }
+    ],
+    "error": null
+}
+
+3) API for country fetch by country phone code
+
+URL   :http://cinfysystems.com:8080/mlearningportal/country/search?phonecode=93
+
+output:
+
+{
+    "status": 1,
+    "data": [
+        {
+            "id": 1,
+            "sortname": "AF",
+            "name": "Afghanistan",
+            "phonecode": 93
+        }
+    ],
+    "error": null
+}
+
+4) API for state fetch by state id :
+
+URL   : http://cinfysystems.com:8080/mlearningportal/state/search?id=1
+
+output:
+
+      {
+    "status": 1,
+    "data": [
+        {
+            "id": 1,
+            "name": "Andaman and Nicobar Islands",
+            "countryId": 101
+        }
+    ],
+    "error": null
+}
+
+5) API fro state fetch by countryId
+
+URL   :http://cinfysystems.com:8080/mlearningportal/state/search?countryId=1
+
+output:
+
+{
+    "status": 1,
+    "data": [
+        {
+            "id": 42,
+            "name": "Badakhshan",
+            "countryId": 1
+        },
+        {
+            "id": 43,
+            "name": "Badgis",
+            "countryId": 1
+        },
+        {
+            "id": 44,
+            "name": "Baglan",
+            "countryId": 1
+        },
+        {
+            "id": 45,
+            "name": "Balkh",
+            "countryId": 1
+        },
+        {
+            "id": 46,
+            "name": "Bamiyan",
+            "countryId": 1
+        },
+        {
+            "id": 47,
+            "name": "Farah",
+            "countryId": 1
+        },
+        {
+            "id": 48,
+            "name": "Faryab",
+            "countryId": 1
+        },
+        {
+            "id": 49,
+            "name": "Gawr",
+            "countryId": 1
+        },
+        {
+            "id": 50,
+            "name": "Gazni",
+            "countryId": 1
+        },
+        {
+            "id": 51,
+            "name": "Herat",
+            "countryId": 1
+        },
+        {
+            "id": 52,
+            "name": "Hilmand",
+            "countryId": 1
+        },
+        {
+            "id": 53,
+            "name": "Jawzjan",
+            "countryId": 1
+        },
+        {
+            "id": 54,
+            "name": "Kabul",
+            "countryId": 1
+        },
+        {
+            "id": 55,
+            "name": "Kapisa",
+            "countryId": 1
+        },
+        {
+            "id": 56,
+            "name": "Khawst",
+            "countryId": 1
+        },
+        {
+            "id": 57,
+            "name": "Kunar",
+            "countryId": 1
+        },
+        {
+            "id": 58,
+            "name": "Lagman",
+            "countryId": 1
+        },
+        {
+            "id": 59,
+            "name": "Lawghar",
+            "countryId": 1
+        },
+        {
+            "id": 60,
+            "name": "Nangarhar",
+            "countryId": 1
+        },
+        {
+            "id": 61,
+            "name": "Nimruz",
+            "countryId": 1
+        },
+        {
+            "id": 62,
+            "name": "Nuristan",
+            "countryId": 1
+        },
+        {
+            "id": 63,
+            "name": "Paktika",
+            "countryId": 1
+        },
+        {
+            "id": 64,
+            "name": "Paktiya",
+            "countryId": 1
+        },
+        {
+            "id": 65,
+            "name": "Parwan",
+            "countryId": 1
+        },
+        {
+            "id": 66,
+            "name": "Qandahar",
+            "countryId": 1
+        },
+        {
+            "id": 67,
+            "name": "Qunduz",
+            "countryId": 1
+        },
+        {
+            "id": 68,
+            "name": "Samangan",
+            "countryId": 1
+        },
+        {
+            "id": 69,
+            "name": "Sar-e Pul",
+            "countryId": 1
+        },
+        {
+            "id": 70,
+            "name": "Takhar",
+            "countryId": 1
+        },
+        {
+            "id": 71,
+            "name": "Uruzgan",
+            "countryId": 1
+        },
+        {
+            "id": 72,
+            "name": "Wardag",
+            "countryId": 1
+        },
+        {
+            "id": 73,
+            "name": "Zabul",
+            "countryId": 1
+        }
+    ],
+    "error": null
+}
+
+6)  API for city fetch by city id:
+
+URL    :http://cinfysystems.com:8080/mlearningportal/city/search?id=1
+
+output :
+
+  {
+    "status": 1,
+    "data": [
+        {
+            "id": 1,
+            "name": "Bombuflat",
+            "stateId": 1
+        }
+    ],
+    "error": null
+  }
+  
+7) API for city fetch by stateId:
+
+URL    :http://cinfysystems.com:8080/mlearningportal/city/search?stateId=1
+
+output :
+
+   {
+    "status": 1,
+    "data": [
+        {
+            "id": 1,
+            "name": "Bombuflat",
+            "stateId": 1
+        },
+        {
+            "id": 2,
+            "name": "Garacharma",
+            "stateId": 1
+        },
+        {
+            "id": 3,
+            "name": "Port Blair",
+            "stateId": 1
+        },
+        {
+            "id": 4,
+            "name": "Rangat",
+            "stateId": 1
+        }
+    ],
+    "error": null
+  }  
+  
+8) API for course category fetch by language (1 for english and 2 for hindi)
+
+URL   :http://cinfysystems.com:8080/mlearningportal/courseCategory/search?language=1&userId=1
+
+output:
+
+{
+    "status": 1,
+    "data": [
+        {
+            "id": 8,
+            "courseType": ".Net",
+            "totalSubject": 2,
+            "totalSubjectRead": 1
+        },
+        {
+            "id": 9,
+            "courseType": "Java",
+            "totalSubject": 2,
+            "totalSubjectRead": 1
+        },
+        {
+            "id": 17,
+            "courseType": "PHP",
+            "totalSubject": 0,
+            "totalSubjectRead": 0
+        }
+    ],
+    "error": null
+}
+
+9) API for course category fetch by id
+
+URL   :http://cinfysystems.com:8080/mlearningportal/courseCategory/search?id=8
+
+output:
+
+{
+    "status": 1,
+    "data": [
+        {
+            "id": 8,
+            "courseType": ".Net"
+        }
+    ],
+    "error": null
+}
+
+10) API for course category fetch by  course type
+
+URL   :http://cinfysystems.com:8080/mlearningportal/courseCategory/search?courseType=.Net
+
+output:
+
+{
+    "status": 1,
+    "data": [
+        {
+            "id": 8,
+            "courseType": ".Net"
+        }
+    ],
+    "error": null
+}
+
+11) API for subject fetch by language (1 fro english and 2 for hindi)
+
+URL   :http://cinfysystems.com:8080/mlearningportal/subjectMaster/search?language=1
+
+output:
+
+{
+    "status": 1,
+    "data": [
+        {
+            "id": 8,
+            "name": "Hibernet",
+            "shortDesc": "basics of hibernet",
+            "longDesc": "basics of hibernet",
+            "courseCategoryId": {
+                "id": 9,
+                "courseType": "Java"
+            },
+            "deleted": 0,
+            "language": 1
+        },
+        {
+            "id": 4,
+            "name": "VB.Net",
+            "shortDesc": "abc",
+            "longDesc": "aaaabbbccc hhh kkkk",
+            "courseCategoryId": {
+                "id": 8,
+                "courseType": ".Net"
+            },
+            "deleted": 0,
+            "language": 1
+        },
+        {
+            "id": 3,
+            "name": "Java",
+            "shortDesc": "abcd",
+            "longDesc": "Java is pure object oriented programming language",
+            "courseCategoryId": {
+                "id": 9,
+                "courseType": "Java"
+            },
+            "deleted": 0,
+            "language": 1
+        },
+        {
+            "id": 1,
+            "name": "C Sharp",
+            "shortDesc": "abcd",
+            "longDesc": "C# follow the OOPS concept",
+            "courseCategoryId": {
+                "id": 8,
+                "courseType": ".Net"
+            },
+            "deleted": 0,
+            "language": 1
+        }
+    ],
+    "error": null
+}
+
+12) API for subject fetch by subject id
+
+URL   :http://cinfysystems.com:8080/mlearningportal/subjectMaster/search?id=1
+
+output:
+
+{
+    "status": 1,
+    "data": [
+        {
+            "id": 1,
+            "name": "C Sharp",
+            "shortDesc": "abcd",
+            "longDesc": "C# follow the OOPS concept",
+            "courseCategoryId": {
+                "id": 8,
+                "courseType": ".Net"
+            },
+            "deleted": 0,
+            "language": 1
+        }
+    ],
+    "error": null
+}
+
+13) API for subject fetch by subject name
+
+URL   :http://cinfysystems.com:8080/mlearningportal/subjectMaster/search?name=C Sharp
+
+output:
+
+{
+    "status": 1,
+    "data": [
+        {
+            "id": 1,
+            "name": "C Sharp",
+            "shortDesc": "abcd",
+            "longDesc": "C# follow the OOPS concept",
+            "courseCategoryId": {
+                "id": 8,
+                "courseType": ".Net"
+            },
+            "deleted": 0,
+            "language": 1
+        }
+    ],
+    "error": null
+}
+
+14) API for API for subject fetch by course category Id
+
+URL   :http://cinfysystems.com:8080/mlearningportal/subjectMaster/search?courseCategoryId=8&userId=1
+
+output:
+
+{
+    "status": 1,
+    "data": [
+        {
+            "id": 1,
+            "name": "C Sharp",
+            "shortDesc": "abcd",
+            "longDesc": "C# follow the OOPS concept",
+            "courseCategoryId": {
+                "id": 8,
+                "courseType": ".Net",
+                "totalSubject": null,
+                "totalSubjectRead": null
+            },
+            "deleted": 0,
+            "language": 1,
+            "isRead": true
+        },
+        {
+            "id": 4,
+            "name": "VB.Net",
+            "shortDesc": "abc",
+            "longDesc": "aaaabbbccc hhh kkkk",
+            "courseCategoryId": {
+                "id": 8,
+                "courseType": ".Net",
+                "totalSubject": null,
+                "totalSubjectRead": null
+            },
+            "deleted": 0,
+            "language": 1,
+            "isRead": false
+        }
+    ],
+    "error": null
+}
+
+15) API for course content fetch by language (1 for english and 2 for hindi)
+
+URL   :http://cinfysystems.com:8080/mlearningportal/courseContent/search?language=1
+
+output:
+
+{
+    "status": 1,
+    "data": [
+        {
+            "id": 35,
+            "totalSlide": 2,
+            "totalAllottedTime": 12,
+            "totalAssessmentQuestion": 5,
+            "minPassNo": 50,
+            "videoOrImage": null,
+            "courseModuleId": {
+                "id": 3,
+                "name": "Java",
+                "shortDesc": "abcd",
+                "longDesc": "Java is pure object oriented programming language",
+                "courseCategoryId": {
+                    "id": 9,
+                    "courseType": "Java"
+                },
+                "deleted": 0,
+                "language": 1
+            },
+            "courseUploadCollection": [
+                {
+                    "id": 91,
+                    "slidePath": "35-SampleVideo_720x480_1mb.mp4",
+                    "audioPath": "NA",
+                    "isImgOrVideo": true,
+                    "deleted": false,
+                    "courseContentId": {
+                        "id": 35,
+                        "totalSlide": 2,
+                        "totalAllottedTime": "12",
+                        "totalAssessmentQuestion": 5,
+                        "minPassNo": 50,
+                        "userId": {
+                            "userId": 1,
+                            "email": "ravi@gmail.com",
+                            "phone": "8269442052",
+                            "firstName": "Ravi",
+                            "middleName": "pratap",
+                            "lastName": "singh",
+                            "languageId": 1,
+                            "password": "india@123",
+                            "addedDate": 1517529600000
+                        },
+                        "deleted": 0,
+                        "language": 1,
+                        "commonId": 1,
+                        "entryDate": null,
+                        "updatedDate": null,
+                        "courseModuleId": {
+                            "id": 3,
+                            "name": "Java",
+                            "shortDesc": "abcd",
+                            "longDesc": "Java is pure object oriented programming language",
+                            "courseCategoryId": {
+                                "id": 9,
+                                "courseType": "Java",
+                                "deleted": 0,
+                                "language": 1,
+                                "commonId": 2,
+                                "entryDate": null,
+                                "updatedDate": 1522332427000
+                            },
+                            "deleted": 0,
+                            "language": 1,
+                            "entryDate": null,
+                            "updatedDate": null,
+                            "commonId": 2
+                        }
+                    }
+                },
+                {
+                    "id": 92,
+                    "slidePath": "35-SampleVideo_1280x720_1mb.mp4",
+                    "audioPath": "NA",
+                    "isImgOrVideo": true,
+                    "deleted": false,
+                    "courseContentId": {
+                        "id": 35,
+                        "totalSlide": 2,
+                        "totalAllottedTime": "12",
+                        "totalAssessmentQuestion": 5,
+                        "minPassNo": 50,
+                        "userId": {
+                            "userId": 1,
+                            "email": "ravi@gmail.com",
+                            "phone": "8269442052",
+                            "firstName": "Ravi",
+                            "middleName": "pratap",
+                            "lastName": "singh",
+                            "languageId": 1,
+                            "password": "india@123",
+                            "addedDate": 1517529600000
+                        },
+                        "deleted": 0,
+                        "language": 1,
+                        "commonId": 1,
+                        "entryDate": null,
+                        "updatedDate": null,
+                        "courseModuleId": {
+                            "id": 3,
+                            "name": "Java",
+                            "shortDesc": "abcd",
+                            "longDesc": "Java is pure object oriented programming language",
+                            "courseCategoryId": {
+                                "id": 9,
+                                "courseType": "Java",
+                                "deleted": 0,
+                                "language": 1,
+                                "commonId": 2,
+                                "entryDate": null,
+                                "updatedDate": 1522332427000
+                            },
+                            "deleted": 0,
+                            "language": 1,
+                            "entryDate": null,
+                            "updatedDate": null,
+                            "commonId": 2
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "id": 36,
+            "totalSlide": 2,
+            "totalAllottedTime": 20,
+            "totalAssessmentQuestion": 4,
+            "minPassNo": 44,
+            "videoOrImage": null,
+            "courseModuleId": {
+                "id": 1,
+                "name": "C Sharp",
+                "shortDesc": "abcd",
+                "longDesc": "C# follow the OOPS concept",
+                "courseCategoryId": {
+                    "id": 8,
+                    "courseType": ".Net"
+                },
+                "deleted": 0,
+                "language": 1
+            },
+            "courseUploadCollection": [
+                {
+                    "id": 93,
+                    "slidePath": "36-bg-10.jpg",
+                    "audioPath": "36-SampleAudio_0.4mb.mp3",
+                    "isImgOrVideo": false,
+                    "deleted": false,
+                    "courseContentId": {
+                        "id": 36,
+                        "totalSlide": 2,
+                        "totalAllottedTime": "20",
+                        "totalAssessmentQuestion": 4,
+                        "minPassNo": 44,
+                        "userId": {
+                            "userId": 3,
+                            "email": "dev@gmail.com",
+                            "phone": "8770228800",
+                            "firstName": "dev",
+                            "middleName": "pratap",
+                            "lastName": "singh",
+                            "languageId": 1,
+                            "password": "aW5kaWFAMTIz",
+                            "addedDate": 1517529600000
+                        },
+                        "deleted": 0,
+                        "language": 1,
+                        "commonId": 2,
+                        "entryDate": null,
+                        "updatedDate": 1522507158000,
+                        "courseModuleId": {
+                            "id": 1,
+                            "name": "C Sharp",
+                            "shortDesc": "abcd",
+                            "longDesc": "C# follow the OOPS concept",
+                            "courseCategoryId": {
+                                "id": 8,
+                                "courseType": ".Net",
+                                "deleted": 0,
+                                "language": 1,
+                                "commonId": 1,
+                                "entryDate": null,
+                                "updatedDate": 1522332437000
+                            },
+                            "deleted": 0,
+                            "language": 1,
+                            "entryDate": null,
+                            "updatedDate": null,
+                            "commonId": 1
+                        }
+                    }
+                },
+                {
+                    "id": 94,
+                    "slidePath": "36-Design-Services_Image-8.jpg",
+                    "audioPath": "36-SampleAudio_0.7mb.mp3",
+                    "isImgOrVideo": false,
+                    "deleted": false,
+                    "courseContentId": {
+                        "id": 36,
+                        "totalSlide": 2,
+                        "totalAllottedTime": "20",
+                        "totalAssessmentQuestion": 4,
+                        "minPassNo": 44,
+                        "userId": {
+                            "userId": 3,
+                            "email": "dev@gmail.com",
+                            "phone": "8770228800",
+                            "firstName": "dev",
+                            "middleName": "pratap",
+                            "lastName": "singh",
+                            "languageId": 1,
+                            "password": "aW5kaWFAMTIz",
+                            "addedDate": 1517529600000
+                        },
+                        "deleted": 0,
+                        "language": 1,
+                        "commonId": 2,
+                        "entryDate": null,
+                        "updatedDate": 1522507158000,
+                        "courseModuleId": {
+                            "id": 1,
+                            "name": "C Sharp",
+                            "shortDesc": "abcd",
+                            "longDesc": "C# follow the OOPS concept",
+                            "courseCategoryId": {
+                                "id": 8,
+                                "courseType": ".Net",
+                                "deleted": 0,
+                                "language": 1,
+                                "commonId": 1,
+                                "entryDate": null,
+                                "updatedDate": 1522332437000
+                            },
+                            "deleted": 0,
+                            "language": 1,
+                            "entryDate": null,
+                            "updatedDate": null,
+                            "commonId": 1
+                        }
+                    }
+                }
+            ]
+        }
+    ],
+    "error": null
+}
+
+16) API for course content fetch by id
+
+URL   :http://cinfysystems.com:8080/mlearningportal/courseContent/search?id=35
+
+output:
+
+{
+    "status": 1,
+    "data": [
+        {
+            "id": 35,
+            "totalSlide": 2,
+            "totalAllottedTime": 12,
+            "totalAssessmentQuestion": 5,
+            "minPassNo": 50,
+            "videoOrImage": null,
+            "courseModuleId": {
+                "id": 3,
+                "name": "Java",
+                "shortDesc": "abcd",
+                "longDesc": "Java is pure object oriented programming language",
+                "courseCategoryId": {
+                    "id": 9,
+                    "courseType": "Java"
+                },
+                "deleted": 0,
+                "language": 1
+            },
+            "courseUploadCollection": [
+                {
+                    "id": 91,
+                    "slidePath": "35-SampleVideo_720x480_1mb.mp4",
+                    "audioPath": "NA",
+                    "isImgOrVideo": true,
+                    "deleted": false,
+                    "courseContentId": {
+                        "id": 35,
+                        "totalSlide": 2,
+                        "totalAllottedTime": "12",
+                        "totalAssessmentQuestion": 5,
+                        "minPassNo": 50,
+                        "userId": {
+                            "userId": 1,
+                            "email": "ravi@gmail.com",
+                            "phone": "8269442052",
+                            "firstName": "Ravi",
+                            "middleName": "pratap",
+                            "lastName": "singh",
+                            "languageId": 1,
+                            "password": "india@123",
+                            "addedDate": 1517529600000
+                        },
+                        "deleted": 0,
+                        "language": 1,
+                        "commonId": 1,
+                        "entryDate": null,
+                        "updatedDate": null,
+                        "courseModuleId": {
+                            "id": 3,
+                            "name": "Java",
+                            "shortDesc": "abcd",
+                            "longDesc": "Java is pure object oriented programming language",
+                            "courseCategoryId": {
+                                "id": 9,
+                                "courseType": "Java",
+                                "deleted": 0,
+                                "language": 1,
+                                "commonId": 2,
+                                "entryDate": null,
+                                "updatedDate": 1522332427000
+                            },
+                            "deleted": 0,
+                            "language": 1,
+                            "entryDate": null,
+                            "updatedDate": null,
+                            "commonId": 2
+                        }
+                    }
+                },
+                {
+                    "id": 92,
+                    "slidePath": "35-SampleVideo_1280x720_1mb.mp4",
+                    "audioPath": "NA",
+                    "isImgOrVideo": true,
+                    "deleted": false,
+                    "courseContentId": {
+                        "id": 35,
+                        "totalSlide": 2,
+                        "totalAllottedTime": "12",
+                        "totalAssessmentQuestion": 5,
+                        "minPassNo": 50,
+                        "userId": {
+                            "userId": 1,
+                            "email": "ravi@gmail.com",
+                            "phone": "8269442052",
+                            "firstName": "Ravi",
+                            "middleName": "pratap",
+                            "lastName": "singh",
+                            "languageId": 1,
+                            "password": "india@123",
+                            "addedDate": 1517529600000
+                        },
+                        "deleted": 0,
+                        "language": 1,
+                        "commonId": 1,
+                        "entryDate": null,
+                        "updatedDate": null,
+                        "courseModuleId": {
+                            "id": 3,
+                            "name": "Java",
+                            "shortDesc": "abcd",
+                            "longDesc": "Java is pure object oriented programming language",
+                            "courseCategoryId": {
+                                "id": 9,
+                                "courseType": "Java",
+                                "deleted": 0,
+                                "language": 1,
+                                "commonId": 2,
+                                "entryDate": null,
+                                "updatedDate": 1522332427000
+                            },
+                            "deleted": 0,
+                            "language": 1,
+                            "entryDate": null,
+                            "updatedDate": null,
+                            "commonId": 2
+                        }
+                    }
+                }
+            ]
+        }
+    ],
+    "error": null
+}
+
+17) API for course content by subject Id
+
+URL   :http://cinfysystems.com:8080/mlearningportal/courseContent/search?subjectId=1
+
+output:
+
+{
+    "status": 1,
+    "data": [
+        {
+            "id": 36,
+            "totalSlide": 2,
+            "totalAllottedTime": 20,
+            "totalAssessmentQuestion": 4,
+            "minPassNo": 44,
+            "videoOrImage": null,
+            "courseModuleId": {
+                "id": 1,
+                "name": "C Sharp",
+                "shortDesc": "abcd",
+                "longDesc": "C# follow the OOPS concept",
+                "courseCategoryId": {
+                    "id": 8,
+                    "courseType": ".Net"
+                },
+                "deleted": 0,
+                "language": 1
+            },
+            "courseUploadCollection": [
+                {
+                    "id": 93,
+                    "slidePath": "36-bg-10.jpg",
+                    "audioPath": "36-SampleAudio_0.4mb.mp3",
+                    "isImgOrVideo": false,
+                    "deleted": false,
+                    "courseContentId": {
+                        "id": 36,
+                        "totalSlide": 2,
+                        "totalAllottedTime": "20",
+                        "totalAssessmentQuestion": 4,
+                        "minPassNo": 44,
+                        "userId": {
+                            "userId": 3,
+                            "email": "dev@gmail.com",
+                            "phone": "8770228800",
+                            "firstName": "dev",
+                            "middleName": "pratap",
+                            "lastName": "singh",
+                            "languageId": 1,
+                            "password": "aW5kaWFAMTIz",
+                            "addedDate": 1517529600000
+                        },
+                        "deleted": 0,
+                        "language": 1,
+                        "commonId": 2,
+                        "entryDate": null,
+                        "updatedDate": 1522507158000,
+                        "courseModuleId": {
+                            "id": 1,
+                            "name": "C Sharp",
+                            "shortDesc": "abcd",
+                            "longDesc": "C# follow the OOPS concept",
+                            "courseCategoryId": {
+                                "id": 8,
+                                "courseType": ".Net",
+                                "deleted": 0,
+                                "language": 1,
+                                "commonId": 1,
+                                "entryDate": null,
+                                "updatedDate": 1522332437000
+                            },
+                            "deleted": 0,
+                            "language": 1,
+                            "entryDate": null,
+                            "updatedDate": null,
+                            "commonId": 1
+                        }
+                    }
+                },
+                {
+                    "id": 94,
+                    "slidePath": "36-Design-Services_Image-8.jpg",
+                    "audioPath": "36-SampleAudio_0.7mb.mp3",
+                    "isImgOrVideo": false,
+                    "deleted": false,
+                    "courseContentId": {
+                        "id": 36,
+                        "totalSlide": 2,
+                        "totalAllottedTime": "20",
+                        "totalAssessmentQuestion": 4,
+                        "minPassNo": 44,
+                        "userId": {
+                            "userId": 3,
+                            "email": "dev@gmail.com",
+                            "phone": "8770228800",
+                            "firstName": "dev",
+                            "middleName": "pratap",
+                            "lastName": "singh",
+                            "languageId": 1,
+                            "password": "aW5kaWFAMTIz",
+                            "addedDate": 1517529600000
+                        },
+                        "deleted": 0,
+                        "language": 1,
+                        "commonId": 2,
+                        "entryDate": null,
+                        "updatedDate": 1522507158000,
+                        "courseModuleId": {
+                            "id": 1,
+                            "name": "C Sharp",
+                            "shortDesc": "abcd",
+                            "longDesc": "C# follow the OOPS concept",
+                            "courseCategoryId": {
+                                "id": 8,
+                                "courseType": ".Net",
+                                "deleted": 0,
+                                "language": 1,
+                                "commonId": 1,
+                                "entryDate": null,
+                                "updatedDate": 1522332437000
+                            },
+                            "deleted": 0,
+                            "language": 1,
+                            "entryDate": null,
+                            "updatedDate": null,
+                            "commonId": 1
+                        }
+                    }
+                }
+            ]
+        }
+    ],
+    "error": null
+}
+
+18) API for question fetch by languge (1 for english and 2 for hindi)
+
+URL   :http://cinfysystems.com:8080/mlearningportal/question_api/search?language=1
+
+output:
+
+{
+    "status": 1,
+    "data": [
+        {
+            "id": 1,
+            "userId": {
+                "userId": 1,
+                "email": "ravi@gmail.com",
+                "phone": "8269442052",
+                "firstName": "Ravi",
+                "middleName": "pratap",
+                "lastName": "singh",
+                "languageId": 1,
+                "password": "india@123",
+                "addedDate": 1517529600000,
+                "deptId": {
+                    "id": 1,
+                    "deptName": "Science"
+                },
+                "countryId": {
+                    "id": 101,
+                    "sortname": "IN",
+                    "name": "India",
+                    "phonecode": 91
+                },
+                "stateId": {
+                    "id": 21,
+                    "name": "Madhya Pradesh",
+                    "countryId": 101
+                },
+                "cityId": {
+                    "id": 2145,
+                    "name": "Bhopal",
+                    "stateId": 21
+                }
+            },
+            "courseModuleId": {
+                "id": 1,
+                "name": "C Sharp",
+                "shortDesc": "abcd",
+                "longDesc": "C# follow the OOPS concept",
+                "courseCategoryId": {
+                    "id": 8,
+                    "courseType": ".Net"
+                },
+                "deleted": 0,
+                "language": 1
+            },
+            "level": 2,
+            "question": "asdf111",
+            "option1": "sadf1111",
+            "option2": "asdf111",
+            "option3": "sadf111",
+            "option4": "asdf1111",
+            "answer": "option2",
+            "description": "sdaf11111"
+        },
+        {
+            "id": 2,
+            "userId": {
+                "userId": 1,
+                "email": "ravi@gmail.com",
+                "phone": "8269442052",
+                "firstName": "Ravi",
+                "middleName": "pratap",
+                "lastName": "singh",
+                "languageId": 1,
+                "password": "india@123",
+                "addedDate": 1517529600000,
+                "deptId": {
+                    "id": 1,
+                    "deptName": "Science"
+                },
+                "countryId": {
+                    "id": 101,
+                    "sortname": "IN",
+                    "name": "India",
+                    "phonecode": 91
+                },
+                "stateId": {
+                    "id": 21,
+                    "name": "Madhya Pradesh",
+                    "countryId": 101
+                },
+                "cityId": {
+                    "id": 2145,
+                    "name": "Bhopal",
+                    "stateId": 21
+                }
+            },
+            "courseModuleId": {
+                "id": 5,
+                "name": "सी-सर्प ",
+                "shortDesc": null,
+                "longDesc": null,
+                "courseCategoryId": {
+                    "id": 13,
+                    "courseType": "डॉट-नेट "
+                },
+                "deleted": 0,
+                "language": 2
+            },
+            "level": 2,
+            "question": "sdf111",
+            "option1": "sdaf1111",
+            "option2": "sdf11",
+            "option3": "sdf111",
+            "option4": "asdf11",
+            "answer": "option2",
+            "description": "asdf111111"
+        }
+    ],
+    "error": null
+}
+
+19) API for question fetch by id
+
+URL   :http://cinfysystems.com:8080/mlearningportal/question_api/search?id=1
+
+output:
+
+{
+    "status": 1,
+    "data": [
+        {
+            "id": 1,
+            "userId": {
+                "userId": 1,
+                "email": "ravi@gmail.com",
+                "phone": "8269442052",
+                "firstName": "Ravi",
+                "middleName": "pratap",
+                "lastName": "singh",
+                "languageId": 1,
+                "password": "india@123",
+                "addedDate": 1517529600000,
+                "deptId": {
+                    "id": 1,
+                    "deptName": "Science"
+                },
+                "countryId": {
+                    "id": 101,
+                    "sortname": "IN",
+                    "name": "India",
+                    "phonecode": 91
+                },
+                "stateId": {
+                    "id": 21,
+                    "name": "Madhya Pradesh",
+                    "countryId": 101
+                },
+                "cityId": {
+                    "id": 2145,
+                    "name": "Bhopal",
+                    "stateId": 21
+                }
+            },
+            "courseModuleId": {
+                "id": 1,
+                "name": "C Sharp",
+                "shortDesc": "abcd",
+                "longDesc": "C# follow the OOPS concept",
+                "courseCategoryId": {
+                    "id": 8,
+                    "courseType": ".Net"
+                },
+                "deleted": 0,
+                "language": 1
+            },
+            "level": 2,
+            "question": "asdf111",
+            "option1": "sadf1111",
+            "option2": "asdf111",
+            "option3": "sadf111",
+            "option4": "asdf1111",
+            "answer": "option2",
+            "description": "sdaf11111"
+        }
+    ],
+    "error": null
+}
+
+20) API for question fetch by question strings
+
+URL   :http://cinfysystems.com:8080/mlearningportal/question_api/search?question=asd
+
+output:
+
+{
+    "status": 1,
+    "data": [
+        {
+            "id": 1,
+            "userId": {
+                "userId": 1,
+                "email": "ravi@gmail.com",
+                "phone": "8269442052",
+                "firstName": "Ravi",
+                "middleName": "pratap",
+                "lastName": "singh",
+                "languageId": 1,
+                "password": "india@123",
+                "addedDate": 1517529600000,
+                "deptId": {
+                    "id": 1,
+                    "deptName": "Science"
+                },
+                "countryId": {
+                    "id": 101,
+                    "sortname": "IN",
+                    "name": "India",
+                    "phonecode": 91
+                },
+                "stateId": {
+                    "id": 21,
+                    "name": "Madhya Pradesh",
+                    "countryId": 101
+                },
+                "cityId": {
+                    "id": 2145,
+                    "name": "Bhopal",
+                    "stateId": 21
+                }
+            },
+            "courseModuleId": {
+                "id": 1,
+                "name": "C Sharp",
+                "shortDesc": "abcd",
+                "longDesc": "C# follow the OOPS concept",
+                "courseCategoryId": {
+                    "id": 8,
+                    "courseType": ".Net"
+                },
+                "deleted": 0,
+                "language": 1
+            },
+            "level": 2,
+            "question": "asdf111",
+            "option1": "sadf1111",
+            "option2": "asdf111",
+            "option3": "sadf111",
+            "option4": "asdf1111",
+            "answer": "option2",
+            "description": "sdaf11111"
+        }
+    ],
+    "error": null
+}
+
+21) API for question fetch by user id
+
+URL   :http://cinfysystems.com:8080/mlearningportal/question_api/search?userId=1
+
+output:
+
+{
+    "status": 1,
+    "data": [
+        {
+            "id": 1,
+            "userId": {
+                "userId": 1,
+                "email": "ravi@gmail.com",
+                "phone": "8269442052",
+                "firstName": "Ravi",
+                "middleName": "pratap",
+                "lastName": "singh",
+                "languageId": 1,
+                "password": "india@123",
+                "addedDate": 1517529600000,
+                "deptId": {
+                    "id": 1,
+                    "deptName": "Science"
+                },
+                "countryId": {
+                    "id": 101,
+                    "sortname": "IN",
+                    "name": "India",
+                    "phonecode": 91
+                },
+                "stateId": {
+                    "id": 21,
+                    "name": "Madhya Pradesh",
+                    "countryId": 101
+                },
+                "cityId": {
+                    "id": 2145,
+                    "name": "Bhopal",
+                    "stateId": 21
+                }
+            },
+            "courseModuleId": {
+                "id": 1,
+                "name": "C Sharp",
+                "shortDesc": "abcd",
+                "longDesc": "C# follow the OOPS concept",
+                "courseCategoryId": {
+                    "id": 8,
+                    "courseType": ".Net"
+                },
+                "deleted": 0,
+                "language": 1
+            },
+            "level": 2,
+            "question": "asdf111",
+            "option1": "sadf1111",
+            "option2": "asdf111",
+            "option3": "sadf111",
+            "option4": "asdf1111",
+            "answer": "option2",
+            "description": "sdaf11111"
+        },
+        {
+            "id": 2,
+            "userId": {
+                "userId": 1,
+                "email": "ravi@gmail.com",
+                "phone": "8269442052",
+                "firstName": "Ravi",
+                "middleName": "pratap",
+                "lastName": "singh",
+                "languageId": 1,
+                "password": "india@123",
+                "addedDate": 1517529600000,
+                "deptId": {
+                    "id": 1,
+                    "deptName": "Science"
+                },
+                "countryId": {
+                    "id": 101,
+                    "sortname": "IN",
+                    "name": "India",
+                    "phonecode": 91
+                },
+                "stateId": {
+                    "id": 21,
+                    "name": "Madhya Pradesh",
+                    "countryId": 101
+                },
+                "cityId": {
+                    "id": 2145,
+                    "name": "Bhopal",
+                    "stateId": 21
+                }
+            },
+            "courseModuleId": {
+                "id": 5,
+                "name": "सी-सर्प ",
+                "shortDesc": null,
+                "longDesc": null,
+                "courseCategoryId": {
+                    "id": 13,
+                    "courseType": "डॉट-नेट "
+                },
+                "deleted": 0,
+                "language": 2
+            },
+            "level": 2,
+            "question": "sdf111",
+            "option1": "sdaf1111",
+            "option2": "sdf11",
+            "option3": "sdf111",
+            "option4": "asdf11",
+            "answer": "option2",
+            "description": "asdf111111"
+        }
+    ],
+    "error": null
+}
+
+22) API for question fetch by subject id 
+
+URL   :http://cinfysystems.com:8080/mlearningportal/question_api/search?subjectId=1
+
+output:
+
+{
+    "status": 1,
+    "data": [
+        {
+            "id": 1,
+            "userId": {
+                "userId": 1,
+                "email": "ravi@gmail.com",
+                "phone": "8269442052",
+                "firstName": "Ravi",
+                "middleName": "pratap",
+                "lastName": "singh",
+                "languageId": 1,
+                "password": "india@123",
+                "addedDate": 1517529600000,
+                "deptId": {
+                    "id": 1,
+                    "deptName": "Science"
+                },
+                "countryId": {
+                    "id": 101,
+                    "sortname": "IN",
+                    "name": "India",
+                    "phonecode": 91
+                },
+                "stateId": {
+                    "id": 21,
+                    "name": "Madhya Pradesh",
+                    "countryId": 101
+                },
+                "cityId": {
+                    "id": 2145,
+                    "name": "Bhopal",
+                    "stateId": 21
+                }
+            },
+            "courseModuleId": {
+                "id": 1,
+                "name": "C Sharp",
+                "shortDesc": "abcd",
+                "longDesc": "C# follow the OOPS concept",
+                "courseCategoryId": {
+                    "id": 8,
+                    "courseType": ".Net"
+                },
+                "deleted": 0,
+                "language": 1
+            },
+            "level": 2,
+            "question": "asdf111",
+            "option1": "sadf1111",
+            "option2": "asdf111",
+            "option3": "sadf111",
+            "option4": "asdf1111",
+            "answer": "option2",
+            "description": "sdaf11111"
+        }
+    ],
+    "error": null
+}
+
+23) API for department fetch by language ( 1 for english and 2 for hindi)
+
+URL   :http://cinfysystems.com:8080/mlearningportal/dept/search?language=1
+
+output:
+
+{
+    "status": 1,
+    "data": [
+        {
+            "id": 4,
+            "deptName": "English",
+            "language": 1
+        },
+        {
+            "id": 3,
+            "deptName": "Social Science",
+            "language": 1
+        },
+        {
+            "id": 2,
+            "deptName": "Math",
+            "language": 1
+        },
+        {
+            "id": 1,
+            "deptName": "Science",
+            "language": 1
+        }
+    ],
+    "error": null
+}
+
+24) API for department fetch by department name
+
+URL   :http://cinfysystems.com:8080/mlearningportal/dept/search?deptName=English
+
+output:
+
+{
+    "status": 1,
+    "data": [
+        {
+            "id": 4,
+            "deptName": "English",
+            "language": 1
+        }
+    ],
+    "error": null
+}
+
+
+25) API for department fetch by department id
+
+URL   :http://cinfysystems.com:8080/mlearningportal/dept/search?id=4
+
+output:
+
+{
+    "status": 1,
+    "data": [
+        {
+            "id": 4,
+            "deptName": "English",
+            "language": 1
+        }
+    ],
+    "error": null
+}
+
+26) API for Login -(POST request)
+
+URL   :http://cinfysystems.com:8080/mlearningportal/user/login
+
+JSON request for Login :- 
+{
+    "data": {
+        "userId": "dev@gmail.com",
+        "password": "india@123"
+    }
+}
+
+output:
+
+{
+    "status": 1,
+    "data": {
+        "user": {
+            "userId": 3,
+            "email": "dev@gmail.com",
+            "phone": "8770228800",
+            "firstName": "dev",
+            "middleName": "pratap",
+            "lastName": "singh",
+            "languageId": null,
+            "password": "aW5kaWFAMTIz",
+            "profileImagePath": "http://mlearning.cinfysystems.com//USER_IMG/1522933464682_icon.png",
+            "profileImageName": null,
+            "addedDate": 1522925062000,
+            "deptId": {
+                "id": 1,
+                "deptName": "Science",
+                "deleted": 0,
+                "language": 1,
+                "commonId": 1,
+                "entryDate": null,
+                "updatedDate": null
+            },
+            "countryId": {
+                "id": 101,
+                "sortname": "IN",
+                "name": "India",
+                "phonecode": 91
+            },
+            "stateId": {
+                "id": 21,
+                "name": "Madhya Pradesh",
+                "countryId": 101
+            },
+            "cityId": {
+                "id": 2145,
+                "name": "Bhopal",
+                "stateId": 21
+            }
+        }
+    },
+    "error": null
+}
+
+27/1) API For user create -  -(POST request)
+
+URL   :http://cinfysystems.com:8080/mlearningportal/user
+
+JSON request for creating user :-
+
+{"data": {
+        "email": "suraj11@gmail.com",
+        "phone": "8770228891",
+        "firstName": "Suraj1",
+        "middleName": "pratap",
+        "lastName": "singh",
+        "languageId": 1,
+        "password": "india@123",
+	"profileImagePath":"64 encoded image",
+        "profileImageName":"nameofimage.jpg",
+        "countryId":{ 
+        	"id": 101
+        },
+        "stateId":{
+        	"id": 21
+        	},
+        "cityId":{
+        	"id": 2145
+        	
+        },
+        "addedDate": "2018-02-02",
+        "deptId": 1
+    }
+}
+
+output : 
+
+{
+    "status": 1,
+    "data": {
+        "user": {
+            "userId": 3,
+            "email": "dev@gmail.com",
+            "phone": "8770228800",
+            "firstName": "dev",
+            "middleName": "pratap",
+            "lastName": "singh",
+            "languageId": null,
+            "password": "aW5kaWFAMTIz",
+            "profileImagePath": "http://mlearning.cinfysystems.com//USER_IMG/1522933464682_icon.png",
+            "profileImageName": null,
+            "addedDate": 1522925062000,
+            "deptId": {
+                "id": 1,
+                "deptName": "Science",
+                "deleted": 0,
+                "language": 1,
+                "commonId": 1,
+                "entryDate": null,
+                "updatedDate": null
+            },
+            "countryId": {
+                "id": 101,
+                "sortname": "IN",
+                "name": "India",
+                "phonecode": 91
+            },
+            "stateId": {
+                "id": 21,
+                "name": "Madhya Pradesh",
+                "countryId": 101
+            },
+            "cityId": {
+                "id": 2145,
+                "name": "Bhopal",
+                "stateId": 21
+            }
+        }
+    },
+    "error": null
+}
+
+27/2) API For user updateUser -  -(POST request)
+
+URL   :http://cinfysystems.com:8080/mlearningportal/user/updateUser
+
+JSON request for updateUser user :-
+
+{"data": {
+        "userId": 3,
+        "email": "suraj11@gmail.com",
+        "phone": "8770228891",
+        "firstName": "Suraj1",
+        "middleName": "pratap",
+        "lastName": "singh",
+        "languageId": 1,
+        "password": "india@123",
+	"profileImagePath":"64 encoded image",
+        "profileImageName":"nameofimage.jpg",
+        "countryId":{ 
+        	"id": 101
+        },
+        "stateId":{
+        	"id": 21
+        	},
+        "cityId":{
+        	"id": 2145
+        	
+        },
+        "addedDate": "2018-02-02",
+        "deptId": 1
+    }
+}
+
+output : 
+
+{
+    "status": 1,
+    "data": {
+        "user": {
+            "userId": 3,
+            "email": "dev@gmail.com",
+            "phone": "8770228800",
+            "firstName": "dev",
+            "middleName": "pratap",
+            "lastName": "singh",
+            "languageId": null,
+            "password": "aW5kaWFAMTIz",
+            "profileImagePath": "http://mlearning.cinfysystems.com//USER_IMG/1522933464682_icon.png",
+            "profileImageName": null,
+            "addedDate": 1522925062000,
+            "deptId": {
+                "id": 1,
+                "deptName": "Science",
+                "deleted": 0,
+                "language": 1,
+                "commonId": 1,
+                "entryDate": null,
+                "updatedDate": null
+            },
+            "countryId": {
+                "id": 101,
+                "sortname": "IN",
+                "name": "India",
+                "phonecode": 91
+            },
+            "stateId": {
+                "id": 21,
+                "name": "Madhya Pradesh",
+                "countryId": 101
+            },
+            "cityId": {
+                "id": 2145,
+                "name": "Bhopal",
+                "stateId": 21
+            }
+        }
+    },
+    "error": null
+}
+
+28) API For get all course exam -(GET request)
+
+URL   :http://cinfysystems.com:8080/mlearningportal/course_exam/search
+
+
+output : 
+{
+    "status": 1,
+    "data": [
+        {
+            "id": 1,
+            "userId": {
+                "userId": 1,
+                "email": "ravi@gmail.com",
+                "phone": "8269442052",
+                "firstName": "Ravi",
+                "middleName": "pratap",
+                "lastName": "singh",
+                "languageId": 1,
+                "password": "india@123",
+                "addedDate": 1517529600000,
+                "deptId": {
+                    "id": 1,
+                    "deptName": "Science",
+                    "deleted": 0,
+                    "language": 1,
+                    "commonId": 1,
+                    "entryDate": null,
+                    "updatedDate": null
+                },
+                "countryId": {
+                    "id": 101,
+                    "sortname": "IN",
+                    "name": "India",
+                    "phonecode": 91
+                },
+                "stateId": {
+                    "id": 21,
+                    "name": "Madhya Pradesh",
+                    "countryId": 101
+                },
+                "cityId": {
+                    "id": 2145,
+                    "name": "Bhopal",
+                    "stateId": 21
+                }
+            },
+            "courseContentId": null,
+            "courseModuleId": {
+                "id": 3,
+                "name": "Java",
+                "shortDesc": "abcd",
+                "longDesc": "Java is pure object oriented programming language",
+                "courseCategoryId": {
+                    "id": 9,
+                    "courseType": "Java"
+                },
+                "deleted": 0,
+                "language": 1
+            },
+            "examDate": 1517529600000,
+            "attemptNo": 2,
+            "totalQuestion": 20,
+            "totalAttempt": 10,
+            "totalRight": 10,
+            "totalTime": "02:00:00",
+            "result": "pass"
+        }
+    ],
+    "error": null
+}
+
+29) API For fetch course exam by subject Id result -  -(GET request)
+
+URL   :http://cinfysystems.com:8080/mlearningportal/course_exam/search?courseModuleId=3
+
+
+output : 
+{
+    "status": 1,
+    "data": [
+        {
+            "id": 1,
+            "userId": {
+                "userId": 1,
+                "email": "ravi@gmail.com",
+                "phone": "8269442052",
+                "firstName": "Ravi",
+                "middleName": "pratap",
+                "lastName": "singh",
+                "languageId": 1,
+                "password": "india@123",
+                "addedDate": 1517529600000,
+                "deptId": {
+                    "id": 1,
+                    "deptName": "Science",
+                    "deleted": 0,
+                    "language": 1,
+                    "commonId": 1,
+                    "entryDate": null,
+                    "updatedDate": null
+                },
+                "countryId": {
+                    "id": 101,
+                    "sortname": "IN",
+                    "name": "India",
+                    "phonecode": 91
+                },
+                "stateId": {
+                    "id": 21,
+                    "name": "Madhya Pradesh",
+                    "countryId": 101
+                },
+                "cityId": {
+                    "id": 2145,
+                    "name": "Bhopal",
+                    "stateId": 21
+                }
+            },
+            "courseContentId": null,
+            "courseModuleId": {
+                "id": 3,
+                "name": "Java",
+                "shortDesc": "abcd",
+                "longDesc": "Java is pure object oriented programming language",
+                "courseCategoryId": {
+                    "id": 9,
+                    "courseType": "Java"
+                },
+                "deleted": 0,
+                "language": 1
+            },
+            "examDate": 1517529600000,
+            "attemptNo": 2,
+            "totalQuestion": 20,
+            "totalAttempt": 10,
+            "totalRight": 10,
+            "totalTime": "02:00:00",
+            "result": "pass"
+        }
+    ],
+    "error": null
+}
+
+30) API For fetch course exam by user Id result -  -(GET request)
+
+URL   :http://cinfysystems.com:8080/mlearningportal/course_exam/search?userId=1
+
+
+output : 
+{
+    "status": 1,
+    "data": [
+        {
+            "id": 1,
+            "userId": {
+                "userId": 1,
+                "email": "ravi@gmail.com",
+                "phone": "8269442052",
+                "firstName": "Ravi",
+                "middleName": "pratap",
+                "lastName": "singh",
+                "languageId": 1,
+                "password": "india@123",
+                "addedDate": 1517529600000,
+                "deptId": {
+                    "id": 1,
+                    "deptName": "Science",
+                    "deleted": 0,
+                    "language": 1,
+                    "commonId": 1,
+                    "entryDate": null,
+                    "updatedDate": null
+                },
+                "countryId": {
+                    "id": 101,
+                    "sortname": "IN",
+                    "name": "India",
+                    "phonecode": 91
+                },
+                "stateId": {
+                    "id": 21,
+                    "name": "Madhya Pradesh",
+                    "countryId": 101
+                },
+                "cityId": {
+                    "id": 2145,
+                    "name": "Bhopal",
+                    "stateId": 21
+                }
+            },
+            "courseContentId": null,
+            "courseModuleId": {
+                "id": 3,
+                "name": "Java",
+                "shortDesc": "abcd",
+                "longDesc": "Java is pure object oriented programming language",
+                "courseCategoryId": {
+                    "id": 9,
+                    "courseType": "Java"
+                },
+                "deleted": 0,
+                "language": 1
+            },
+            "examDate": 1517529600000,
+            "attemptNo": 2,
+            "totalQuestion": 20,
+            "totalAttempt": 10,
+            "totalRight": 10,
+            "totalTime": "02:00:00",
+            "result": "pass"
+        }
+    ],
+    "error": null
+}
+
+
+31) API For save course exam result -  -(POST request)
+
+URL   :http://cinfysystems.com:8080/mlearningportal/course_exam
+
+JSON request for save course exam result :-
+{
+	"data":{
+	"userId":{"userId":1},
+	"courseModuleId":{"id":1},
+	"examDate":"2018-02-02",
+	"attemptNo":"1",
+	"totalQuestion":"20",
+	"totalAttempt":"15",
+	"totalRight":"14",
+	"totalTime":"10:00:00",
+	"result":"pass"
+	
+	}
+	
+}
+
+output : 
+
+{
+    "status": 1,
+    "data": {
+        "id": 2,
+        "userId": {
+            "userId": 1,
+            "email": null,
+            "phone": null,
+            "firstName": null,
+            "middleName": null,
+            "lastName": null,
+            "languageId": null,
+            "password": null,
+            "addedDate": null,
+            "deptId": null,
+            "countryId": null,
+            "stateId": null,
+            "cityId": null
+        },
+        "courseContentId": null,
+        "courseModuleId": {
+            "id": 5,
+            "name": null,
+            "shortDesc": null,
+            "longDesc": null,
+            "courseCategoryId": null,
+            "deleted": null,
+            "language": null
+        },
+        "examDate": 1517529600000,
+        "attemptNo": 2,
+        "totalQuestion": 20,
+        "totalAttempt": 10,
+        "totalRight": 10,
+        "totalTime": "02:00:00",
+        "result": "pass"
+    },
+    "error": null
+}
+
+32) API For fetch all course attempted -  -(GET request)
+
+URL   :http://cinfysystems.com:8080/mlearningportal/course_attempt/search
+
+output : 
+
+{
+    "status": 1,
+    "data": [
+        {
+            "id": 1,
+            "userId": {
+                "userId": 1,
+                "email": "ravi@gmail.com",
+                "phone": "8269442052",
+                "firstName": "Ravi",
+                "middleName": "pratap",
+                "lastName": "singh",
+                "languageId": 1,
+                "password": "india@123",
+                "addedDate": 1517529600000,
+                "deptId": {
+                    "id": 1,
+                    "deptName": "Science",
+                    "deleted": 0,
+                    "language": 1,
+                    "commonId": 1,
+                    "entryDate": null,
+                    "updatedDate": null
+                },
+                "countryId": {
+                    "id": 101,
+                    "sortname": "IN",
+                    "name": "India",
+                    "phonecode": 91
+                },
+                "stateId": {
+                    "id": 21,
+                    "name": "Madhya Pradesh",
+                    "countryId": 101
+                },
+                "cityId": {
+                    "id": 2145,
+                    "name": "Bhopal",
+                    "stateId": 21
+                }
+            },
+            "courseContentId": null,
+            "courseModuleId": {
+                "id": 3,
+                "name": "Java",
+                "shortDesc": "abcd",
+                "longDesc": "Java is pure object oriented programming language",
+                "courseCategoryId": {
+                    "id": 9,
+                    "courseType": "Java"
+                },
+                "deleted": 0,
+                "language": 1
+            },
+            "attemptDate": 1520812800000,
+            "timeTaken": "02:00:00"
+        }
+    ],
+    "error": null
+}
+
+33) API For fetch course attempted by userId  -(GET request)
+
+URL   :http://cinfysystems.com:8080/mlearningportal/course_attempt/search?userId=1
+
+output : 
+
+{
+    "status": 1,
+    "data": [
+        {
+            "id": 1,
+            "userId": {
+                "userId": 1,
+                "email": "ravi@gmail.com",
+                "phone": "8269442052",
+                "firstName": "Ravi",
+                "middleName": "pratap",
+                "lastName": "singh",
+                "languageId": 1,
+                "password": "india@123",
+                "addedDate": 1517529600000,
+                "deptId": {
+                    "id": 1,
+                    "deptName": "Science",
+                    "deleted": 0,
+                    "language": 1,
+                    "commonId": 1,
+                    "entryDate": null,
+                    "updatedDate": null
+                },
+                "countryId": {
+                    "id": 101,
+                    "sortname": "IN",
+                    "name": "India",
+                    "phonecode": 91
+                },
+                "stateId": {
+                    "id": 21,
+                    "name": "Madhya Pradesh",
+                    "countryId": 101
+                },
+                "cityId": {
+                    "id": 2145,
+                    "name": "Bhopal",
+                    "stateId": 21
+                }
+            },
+            "courseContentId": null,
+            "courseModuleId": {
+                "id": 3,
+                "name": "Java",
+                "shortDesc": "abcd",
+                "longDesc": "Java is pure object oriented programming language",
+                "courseCategoryId": {
+                    "id": 9,
+                    "courseType": "Java"
+                },
+                "deleted": 0,
+                "language": 1
+            },
+            "attemptDate": 1520812800000,
+            "timeTaken": "02:00:00"
+        }
+    ],
+    "error": null
+}
+34) API For fetch all course attempted by subject Id   -(GET request)
+
+URL   :http://cinfysystems.com:8080/mlearningportal/course_attempt/search?courseModuleId=3
+
+output : 
+
+{
+    "status": 1,
+    "data": [
+        {
+            "id": 1,
+            "userId": {
+                "userId": 1,
+                "email": "ravi@gmail.com",
+                "phone": "8269442052",
+                "firstName": "Ravi",
+                "middleName": "pratap",
+                "lastName": "singh",
+                "languageId": 1,
+                "password": "india@123",
+                "addedDate": 1517529600000,
+                "deptId": {
+                    "id": 1,
+                    "deptName": "Science",
+                    "deleted": 0,
+                    "language": 1,
+                    "commonId": 1,
+                    "entryDate": null,
+                    "updatedDate": null
+                },
+                "countryId": {
+                    "id": 101,
+                    "sortname": "IN",
+                    "name": "India",
+                    "phonecode": 91
+                },
+                "stateId": {
+                    "id": 21,
+                    "name": "Madhya Pradesh",
+                    "countryId": 101
+                },
+                "cityId": {
+                    "id": 2145,
+                    "name": "Bhopal",
+                    "stateId": 21
+                }
+            },
+            "courseContentId": null,
+            "courseModuleId": {
+                "id": 3,
+                "name": "Java",
+                "shortDesc": "abcd",
+                "longDesc": "Java is pure object oriented programming language",
+                "courseCategoryId": {
+                    "id": 9,
+                    "courseType": "Java"
+                },
+                "deleted": 0,
+                "language": 1
+            },
+            "attemptDate": 1520812800000,
+            "timeTaken": "02:00:00"
+        }
+    ],
+    "error": null
+}
+
+35) API For save course Attempt -  -(POST request) 
+
+URL   :http://cinfysystems.com:8080/mlearningportal/course_attempt
+
+JSON request for save course Attempt :-
+{"data": {
+	
+	"data":{
+	"userId":{"userId":1},
+	"courseModuleId":{"id":1},
+	"attemptDate":"2018-02-02",
+    "timeTaken":"10:00:00"
+
+}
+}
+
+output : 
+
+{
+    "status": 1,
+    "data": {
+        "id": 2,
+        "userId": {
+            "userId": 1,
+            "email": null,
+            "phone": null,
+            "firstName": null,
+            "middleName": null,
+            "lastName": null,
+            "languageId": null,
+            "password": null,
+            "addedDate": null,
+            "deptId": null,
+            "countryId": null,
+            "stateId": null,
+            "cityId": null
+        },
+        "courseModuleId": {
+            "id": 5,
+            "name": null,
+            "shortDesc": null,
+            "longDesc": null,
+            "courseCategoryId": null,
+            "deleted": null,
+            "language": null
+        },
+        "attemptDate": 1517529600000,
+        "timeTaken": "02:00:00"
+    },
+    "error": null
+}
+

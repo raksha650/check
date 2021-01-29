@@ -1,0 +1,46 @@
+server:
+  port: 8080
+  contextPath: /mlearningportal
+---
+spring:
+  profiles: default,local
+  jpa:
+    hibernate:
+      ddl-auto: none
+      
+  http:
+    multipart:
+        max-file-size: 800MB
+        max-request-size: 800MB
+  mvc: 
+    view:
+      prefix:  /WEB-INF/jsp/
+      suffix: .jsp 
+
+ 
+       
+LOG_PATH: logs/
+UPLOAD_PATH_USER_IMG: USER_IMG
+UPLOAD_PATH_CONTENT_SLIDES:  CONTENT_SLIDES
+UPLOAD_PATH_CONTENT_AUDIO:  CONTENT_AUDIO
+UPLOAD_PATH_COURSE_IMG: COURSE_IMG
+
+
+
+
+datasource:
+    url: jdbc:mysql://172.168.31.10:3306/cinfysys_mlearningDB
+    username: root
+    password: mysql
+    driverClassName: com.mysql.jdbc.Driver
+    defaultSchema: 
+    maxPoolSize: 50
+    hibernate:
+      hbm2ddl.method: update
+      show_sql: true
+      format_sql: true
+      dialect: org.hibernate.dialect.MySQLDialect
+
+   
+    
+    

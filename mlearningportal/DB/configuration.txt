@@ -1,0 +1,43 @@
+Credencials for MPPMCL For Putty Only
+Domain::: elearning.mppmcl.com
+ip::::::: 223.31.122.158
+UserId::: mlearning
+pass::::: mppmcl@cinfy
+
+mysql directory is::: opt_data/mysql
+
+
+Database::
+ url: jdbc:mysql://localhost:3306/cinfysys_mlearningDB
+    username: root
+    password: root@123
+    
+    
+1) restart httpd::: /sbin/service httpd restart
+2) Note:   etc/httpd/conf/vi httpd.conf changed " Listen 80" to " Listen 8081"
+3) Note:   opt_data/tomcat/ apache-tomcat-8.5.40/conf/ vi server.xml  changed "Connector port 8080" to "80"
+4) restart httpd::: /sbin/service httpd restart
+5) restart tomcat
+6) Note to get details of which port is used by which process cmd::  netstat -plnt
+7) To restart mysql in centos :: service mysql restart
+8) for toomany connection mysql
+     1)Update my.cnf -  /etc/ my.cnf add line :: max_connections = 512
+	 2)to SET GLOBAL run command in putty  - 0)cd /
+											 1) mysql -u root -p
+											 2)Then enter root user password
+											 3)SET GLOBAL max_connections = 512
+											 
+9)How to set up a reverse proxy(https://in.godaddy.com/help/how-to-set-up-a-reverse-proxy-12303)
+    1) Add lines of code to httpd.conf file 
+       #--------------------------------------------------------
+		LoadModule proxy_module modules/mod_proxy.so
+		LoadModule proxy_http_module modules/mod_proxy_http.so
+		# mod_proxy setup.
+		ProxyRequests Off
+		ProxyPass / http://localhost:8080/
+		ProxyPassReverse / http://localhost:8080/
+		<Location "/">
+		  Order allow,deny
+		  Allow from all
+		</Location>
+		#---------------------------------------------------
